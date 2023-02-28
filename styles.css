@@ -1,0 +1,83 @@
+body {
+    background-color:  #121212;
+}
+
+#center {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    border: black 100px;
+    position: relative;
+    width: 360px;
+    height: 640px;
+    margin: auto;
+    border: 9px rgb(0, 0, 0) solid;
+    outline: 2px solid rgb(198, 198, 198);
+    border-top-width: 20px;
+    border-bottom-width: 10px;
+    border-radius: 36px;
+    background: rgb(181, 218, 255);
+}
+
+#dynamicIsland {
+    width: 200px;
+    border-radius: 25px;
+    height: 40px;
+    background: black;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    transition: all 0.35s;
+    box-shadow: black 0px 0px 2px;
+    margin-bottom: 580px;
+}
+
+#dynamicIsland:hover {
+    width: 340px;
+    height: 120px;
+    transition: all 0.35s;
+    border-radius: 30px;
+    margin-bottom: 500px;
+}
+
+#dynamicIsland:hover img {
+    width: 60px;
+    transition: all 0.35s;
+    position: relative;
+    margin-right: 260px;
+    margin-bottom: 40px;
+}
+
+img {
+    width: 30px;
+    border-radius: 15px;
+    position: relative;
+    margin-right: 160px;
+    margin-top: 40px;
+    transition: all 0.35s;
+}
+
+.hidden {
+    visibility: hidden;
+    position: relative;
+    font-family: 'Inter', sans-serif;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin: 0;
+    top: -30px;
+    left: -45px;
+    user-select: none;
+}
+
+#gray {
+    color: gray;
+    font-size: 12px;
+}
+  
+#dynamicIsland:hover > .hidden {
+    visibility: visible;
+    transition: all 0.3s;
+    top: -100px;
+    left: -45px;
+}
+
